@@ -1,0 +1,18 @@
+/*
+
+Theme Name: Desply Theme Base
+Theme URI: http://desply.pl
+Description:
+Author: Paweł Mołodecki
+Author URI: http://pawelmolodecki.pl
+Version: 2.0
+
+*/
+
+.wpinfo {
+	display: block;
+	min-height: 200px;
+	background: red;
+	color: white;
+	font-size: 1.5em;
+}
