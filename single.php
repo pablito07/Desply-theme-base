@@ -2,8 +2,7 @@
 
 <?php the_post(); ?>
 
-<div class="hold">
-<div id="content" class="scroll-pane movein">
+<div id="content">
 <section>
 	<header>
 		<h2 class="h1"><?php the_title(); ?></h2>
@@ -14,7 +13,6 @@
 		<div class="clear"></div>
 	</article>
 </section>
-</div>
 </div>
 
 <?php get_footer(); ?>
