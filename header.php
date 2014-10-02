@@ -32,10 +32,12 @@
 	<link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css">
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/screen.css?ver=1">
-	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/fonts/style.css">
+	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/fonts/fonts.css">
 	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" />
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/myscript.js"></script>
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
@@ -43,12 +45,10 @@
 	<?php wp_head() ?>
 </head>
 <body <?php body_class()?>>
+<div class="container">
 	<header id="header">
-		<section class="container">
-			<h1><a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"/></a></h1>
-			<nav id="main-nav">
-				<?php wp_nav_menu(array('theme_location' => 'header-menu'));?>
-			</nav>
-			<div class="clear"></div>
-		</section>
+		<h1><a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"/></a></h1>
+		<nav id="main-nav">
+			<?php wp_nav_menu(array('theme_location' => 'header-menu'));?>
+		</nav>
 	</header>

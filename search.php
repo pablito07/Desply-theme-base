@@ -1,9 +1,3 @@
-<?php
-/*
-Template Name: Search Page
-*/
-?>
-
 <?php get_header(); ?>
 <script src="<?php echo get_template_directory_uri(); ?>/js/modernizr.custom.js"></script>
 

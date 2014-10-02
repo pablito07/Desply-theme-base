@@ -1,13 +1,13 @@
 <?php get_header(); ?>
 
-
-<section class="content container">
-	<div class="post">
-		<?php while ( have_posts() ) : the_post(); ?>	
-			<?php get_template_part( 'loop' );?>
-		<?php endwhile; ?>
-	</div>
-</section>
-
+<div id="content">
+	<section>
+		<ul class="post">
+			<?php while ( have_posts() ) : the_post(); ?>
+				<?php get_template_part( 'loop' );?>
+			<?php endwhile; ?>
+		</ul>
+	</section>
+</div>
 
 <?php get_footer(); ?>
