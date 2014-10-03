@@ -3,7 +3,7 @@
 
 /* Typography
 -------------------------------------------------------------------------------*/
-html, body {font: 13px Arial, Arial, Helvetica, sans-serif;font-weight: normal;font-style: normal;line-height: 1.4;color: #fff;}
+html, body {font: 13px Arial, Helvetica, sans-serif;font-weight: normal;font-style: normal;line-height: 1.4;color: #fff;}
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {font-family:'Open Sans', sans-serif;text-transform: uppercase;line-height: 1;font-weight:300;}
 h1, .h1 {font-size: 2.8em;margin: .5em 0;letter-spacing: -0.05em;}
 h2, .h2 {font-size: 2.6em;margin: .5em 0;}
@@ -12,14 +12,12 @@ h4, .h4 {font-size: 2.2em;margin: .5em 0;}
 h5, .h5 {font-size: 2em;margin: .5em 0;}
 h6, .h6 {font-size: 1.5em;margin: .5em 0;}
 
+header nav li a {font-family: Arial, Helvetica, sans-serif;letter-spacing: -1px;font-size: 1em;line-height: 0.9em;}
+header nav li a, header nav li a:visited {color:#686868;}
+header nav li a:hover, header nav li.current_page_item a {color:#fff;}
+header nav li.current_page_item li a {color:#686868;}
 
-#menu-menu li a {font-family: Arial, Arial, Helvetica, sans-serif;font-weight: 800;letter-spacing: -1px;font-size: 2.4em;line-height: 0.9em;text-transform: uppercase;}
-#menu-social li a {font-family: Arial, Arial, Helvetica, sans-serif;letter-spacing: -1px;font-size: 1em;line-height: 0.9em;text-transform: uppercase;}
-#menu-menu li a, #menu-menu li a:visited, #menu-social a, #menu-social a:visited {color:#686868;}
-#menu-menu li a:hover, #menu-menu li.current_page_item a, #menu-social a:hover {color:#fff;}
-#menu-menu li.current_page_item li a {color:#686868;}
-
-input, textarea, select {font-family:  Arial, Arial, Helvetica, sans-serif;color: #fff;}
+input, textarea, select {font-family: Arial, Helvetica, sans-serif;color: #fff;}
 p {margin:20px 0;}
 strong {font-weight:bold;}
 
@@ -48,20 +46,24 @@ img.alignright {float:right;margin:0 0 10px 10px;}
 #header {width: 100%;}
 #header, #content {float: left;}
 
+
+.container {background: #eee;}
+#header, #footer {background: #666;}
+header nav {background: #888;}
+
 /* Header
 -------------------------------------------------------------------------------*/
-/*#header {position: fixed;top: 90px;}*/
 #header h1 {width:100%;margin:0;}
 
 	/* Menu
 	-------------------------------------------------------------------------------*/
-	#menu-menu {position: relative;list-style: none;}
-	#menu-menu {margin-top: 65px;}
-	#menu-menu li {position:relative;list-style: none;}
-	#menu-menu li a {padding:0;display: inline-block;}
-	#menu-menu li ul a {margin-left:25px;}
-	#menu-menu ul ul, #menu-menu li:hover ul ul {display:none;}
-	#menu-menu ul li:hover ul {display:block;left: 100%;width: 100%;top: -35px;}
+	header nav {position: relative;list-style: none;}
+	header nav {margin-top: 65px;}
+	header nav li {position:relative;list-style: none;}
+	header nav li a {padding:0;display: inline-block;}
+	header nav li ul a {margin-left:25px;}
+	header nav ul ul, header nav li:hover ul ul {display:none;}
+	header nav ul li:hover ul {display:block;left: 100%;width: 100%;top: -35px;}
 
 
 
@@ -73,12 +75,7 @@ img.alignright {float:right;margin:0 0 10px 10px;}
 	input,textarea {padding:8px!important;background:#000;background:rgba(0, 0, 0, 0.47);border:1px solid #303030;width:100%;-webkit-border-radius:2px;border-radius:2px;outline: 0;font-size: 1.1em;}
 	.wpcf7-form p {margin:0 0 20px 0;clear:both;}
 	.wpcf7-list-item {display:block;}
-	input[type="submit"] {background: #000;color: #fff;font-weight: bold;font-family: 'Open Sans', sans-serif;width: 30%;margin: 0 auto;display: block;padding: 8px;
-	-webkit-transition: all .4s;
-	-moz-transition: all .4s;
-	-o-transition: all .4s;
-	-ms-transition: all .4s;
-	transition: all .4s;}
+	input[type="submit"] {background: #000;color: #fff;font-weight: bold;font-family: 'Open Sans', sans-serif;width: 30%;margin: 0 auto;display: block;padding: 8px;}
 	input[type="submit"]:hover {background: #fff;color: #000;}
 
 #content article {padding: 0 5px 0 0;}
@@ -89,7 +86,7 @@ img.alignright {float:right;margin:0 0 10px 10px;}
 
 /* Footer
 -------------------------------------------------------------------------------*/
-#footer {color:#fff;text-align: left;width: 28.5%;margin-left:1.5%;position: fixed;top: 550px;opacity: 0.7;height: 40px;float: left;}
+#footer {text-align: left;width: 100%;height: 40px;}
 #footer a {text-decoration: underline;}
 #footer .autor {display: block;}
 

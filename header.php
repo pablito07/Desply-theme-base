@@ -49,6 +49,6 @@
 	<header id="header">
 		<h1><a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png"/></a></h1>
 		<nav id="main-nav">
-			<?php wp_nav_menu(array('theme_location' => 'header-menu'));?>
+			<?php wp_nav_menu(array('theme_location' => 'header-menu', 'container' => 'nav'));?>
 		</nav>
 	</header>
