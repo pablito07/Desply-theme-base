@@ -41,6 +41,8 @@ footer a:hover {color:#fff;}
 	background: #fff;
 }
 
+img.alignleft {float:left;margin:0 10px 10px 0;}
+img.alignright {float:right;margin:0 0 10px 10px;}
 
 .container {max-width: 960px;min-width:850px;width:100%;margin: 0 auto 0;}
 #header {width: 100%;}
